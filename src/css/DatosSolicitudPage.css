@@ -1,0 +1,26 @@
+.DatosSolicitudPage{
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 160px 1fr auto;
+    /* flex-direction: column;
+    justify-content: space-between; */
+    gap: 20px;
+}
+
+.DatosSolicitudPage section{
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-user{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.datos-user ul{
+    list-style: none;
+    display: grid;
+}

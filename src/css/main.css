@@ -1,0 +1,452 @@
+.container{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* overflow: hidden; */
+
+    background-image:  url('src/img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    /* background-color: aqua; */
+    width: 220px;
+    border-right: 1px solid var(--text-main);
+    /* background-color: #002f5b; */
+    background-color: #00529f;
+    box-shadow: 5px 5px 10px;
+
+}
+
+.logo{
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.my-nav{
+    list-style: none;
+    /* padding: 20px 16px; */
+    display: grid;
+    /* gap: 12px; */
+    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+.my-nav li{
+    background-color: #00529f;
+}
+
+.my-nav li a{
+    box-sizing: border-box;
+
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+
+.my-nav li button{
+    color: white;
+    border: none;
+    font-size: 18px;
+    background: none;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.my-nav li a:hover, 
+.my-nav li button:hover{
+    background-color: #3593eb79;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 2px solid red;
+}
+
+.head-banner img{
+    height: 64px;
+    padding: 3px;
+}
+
+.main-content{
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 80px);
+    overflow: auto;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* perfil  */ 
+
+.profile-user{
+    display: grid;
+    grid-template-areas: 'n1 n2' 'n3 n3';
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 100%;
+    width: 1000px;
+    max-width: 90%;
+}
+
+.profile-data{
+    list-style: none;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    height: 90%;
+}
+
+.profile-data p,
+.profile-data button{
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.profile-data button,
+#update button{
+    font-size: 18px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(66, 75, 248);
+    color: white;
+}
+
+#update{
+    width: 94%;
+    grid-area: n3;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* mis peticiones */
+
+
+.petition-user{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 20px;
+}
+
+.nota-peticion{
+    background-color: var(--color-light-blue-ope);
+    border: 6px solid var(--text-link);
+    border-radius: 16px;
+    padding: 20px 30px;
+}
+
+.petition-table{
+    background-color: black;
+    flex-grow: 1;
+    max-height: 42px;
+    color: var(--text-main);
+}
+
+.petition-table tr{
+    background-color: var(--background-body);
+}
+
+.petition-table tr td{
+    padding: 10px;
+    text-align: center;
+}
+
+.petition-table tr th{
+    padding: 4px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ruralidad  */
+
+.ruralidad-form{
+    background-color: white;
+    width: auto;
+    padding: 20px 12px;
+    border-radius: 16px;
+    border: 2px solid black;
+    display: grid;
+    gap: 12px;
+}
+
+.petition-form{
+    background-color: white;
+    width: 50%;
+    max-width: 450px;
+    padding: 20px 12px;
+    border-radius: 16px;
+    border: 2px solid black;
+    display: grid;
+}
+
+.petition-form form label,
+.petition-form form input,
+.ruralidad-form form input{
+    width: 100%;
+}
+
+.ruralidad-form form,
+.petition-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ruralidad-form form label span,
+.petition-form form label span{
+    font-weight: 600;
+}
+
+.ruralidad-form form h2,
+.petition-form form h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    /* margin-bottom: 10px; */
+    color: #00529f;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* login */
+
+.container1{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 75% auto;
+    /* overflow: hidden; */
+
+}
+
+.logo-sau-ine{
+    /* background-color: #00529f;
+    background-image: url('/src/img/Login-SAU.jpg');
+    ;
+     */
+
+    background-image:  url('src/img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* width: 80%; */
+    padding-right: 160px;
+    height: calc(100% - 72px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.logo-sau-ine h2,
+.form-title h2{
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #00529f;
+    text-align: center;
+}
+
+.fron-login{
+    background-image: url('/src/img/SaltoAngel1.jpg');
+    /* background-image: url('/src/img/salto-angel.png'); */
+    /* background-color: #00529f; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+.content-form{
+    background-color: white;
+    width: auto;
+    margin-left: -100%;
+    padding: 20px 12px;
+    border-radius: 16px;
+    border: 2px solid black;
+    display: grid;
+    gap: 12px;
+}
+
+.content-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-form form label{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-form form label span{
+    font-weight: 500;
+    color: black;
+}
+
+.links-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 4px;
+}
+
+
+.links-login a{
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* register */
+
+.container2{
+    background-image:  url('src/img/fondo.png');
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.register-content{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register{
+    background-color: white;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 16px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.register .formdata{
+    display: flex;
+    gap: 30px;
+}
+
+.register .formdata div{
+    display: grid;
+    gap: 6px;
+}
+
+.register form div label{
+    min-height: 70px;
+    justify-content: end;
+}
+
+.register form div label span{
+    font-weight: 500;
+    color: black;
+}
+
+.verify{
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    height: calc(100% - 30px);
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.verify div{
+    max-width: 100%;
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+.verify div p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cod-verify{
+    /* max-width: 40px; */
+    min-height: 40px;
+}
+
+#verify-code{
+    position: absolute;
+    width: 200px;
+    top: calc(100% - 80px);
+    left: calc(100% - 200px);
+}
