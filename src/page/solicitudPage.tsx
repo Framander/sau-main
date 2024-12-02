@@ -33,7 +33,7 @@ function SolicitudPage() {
                         <select {...register("tipo", { required: true })} >
                             <option value=""  hidden>Tipo de petición</option>
                             <option value="Ruralidad" >Ruralidad</option>
-                            <option value="Datos general" >Datos general</option>
+                            <option value="Datos general" >Datos generales</option>
                             <option value="otro" >otro</option>
                         </select>
                     </label>
@@ -42,7 +42,7 @@ function SolicitudPage() {
                         <span>Descripción</span>
                         <textarea 
                             {...register("box", { required: true })} 
-                            placeholder="Ejemplo: de la peticion"
+                            placeholder="Ejemplo  de la petición:"
                             // que la camtida de letra sea 500
                         />
                     </label>
