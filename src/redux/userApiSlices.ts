@@ -51,6 +51,13 @@ export const userApiSlice = apiSlice.injectEndpoints({
                 method: 'POST',
                 body: data,
             }),
+        }), 
+        My_solicitud: builder.mutation({
+            query: () => ({
+                url: `${USERS_URL}/peticion/Solicitud-General`,
+                method: 'GET',
+                // body: data,
+            }),
         })
     }),
 });
@@ -62,5 +69,6 @@ export const {
     useUpdateUserMutation, 
     useVerifyCodeMutation,
     useVerifyOTPMutation,
-    useSolicitud_generalMutation
+    useSolicitud_generalMutation,
+    useMy_solicitudMutation
 } = userApiSlice;

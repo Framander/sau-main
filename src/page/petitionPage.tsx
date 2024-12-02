@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom"
+import { useMy_solicitudMutation } from "../redux/userApiSlices"
+import { useEffect, useState } from "react"
 
 function Petition() {
+    const [soli, setSoli] = useState([])
+    const [ my_soli ] = useMy_solicitudMutation()
+
+    useEffect( () => {
+        my_soli("").unwrap()
+        .then( solicitud => setSoli(solicitud))
+    }, [])
 
     const TableElements = (props: { tipo: string, inicio: string, cierre: string, estatus: string, id: string }) => {
         return (
@@ -35,13 +44,21 @@ function Petition() {
                     </tr>
                 </thead>
                 <tbody>
-                    <TableElements tipo="Solicitudes" inicio="dd/mm/aaaa" cierre='--/--/----' estatus='Pendiente'   id="1"/>
-                    <TableElements tipo="Solicitudes" inicio="dd/mm/aaaa" cierre='--/--/----' estatus='En Progreso' id="1"/>
-                    <TableElements tipo="Solicitudes" inicio="dd/mm/aaaa" cierre='dd/mm/aaaa' estatus='Finalizada'  id="1"/>
-                    <TableElements tipo="Solicitudes" inicio="dd/mm/aaaa" cierre='dd/mm/aaaa' estatus='Finalizada'  id="1"/>
-                    <TableElements tipo="Solicitudes" inicio="dd/mm/aaaa" cierre='dd/mm/aaaa' estatus='Finalizada'  id="1"/>
-                    <TableElements tipo="Solicitudes" inicio="dd/mm/aaaa" cierre='dd/mm/aaaa' estatus='Finalizada'  id="1"/>
 
+
+                    {
+
+                        !!soli[0] && soli.map( (x) => {
+                            
+                            return <TableElements 
+                                key={x._id} 
+                                tipo={x.tipo} 
+                                inicio={x.createdAt} 
+                                cierre='--/--/----' 
+                                estatus='Pendiente'   
+                                id={x._id}/>
+                        })
+                    }
                 </tbody>
 
             </table>
