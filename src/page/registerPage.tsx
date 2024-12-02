@@ -137,7 +137,7 @@ function RegisterPage() {
 
                     <form className="verify" style={{ display: verify }}>
 
-                        <h2>hemos enviado un codigo a su correo</h2>
+                        <h2>Hemos enviado un código a su correo</h2>
         
                         <div>
                             {/* <p> { ErrorCod } </p> */}
