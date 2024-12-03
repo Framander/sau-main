@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import NormalRoutes from "./NormalRouter";
-
 import LoginPage from "../page/loginPage";
 import RegisterPage from "../page/registerPage";
 import PrivateRoutes from "./privateRoutes";
