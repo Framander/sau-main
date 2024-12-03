@@ -74,7 +74,7 @@ function RegisterPage() {
         return (
             <label>
                 <span>{props.name}</span>
-                <input {...register(props.nameValue, { required: props.required })} type={props.type} />
+                <input {...register(props.nameValue, { required: props.required })} type={props.type} maxLength={60}/>
             </label>
         )
     }
