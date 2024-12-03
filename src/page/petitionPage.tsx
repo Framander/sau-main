@@ -51,11 +51,11 @@ function Petition() {
                         !!soli[0] && soli.map( (x) => {
                             
                             return <TableElements 
-                                key={x._id} 
+                                key={x._id}
                                 tipo={x.tipo} 
-                                inicio={x.createdAt} 
+                                inicio={x.createdAt.slice(0, 10) } 
                                 cierre='--/--/----' 
-                                estatus='Pendiente'   
+                                estatus={x.status} 
                                 id={x._id}/>
                         })
                     }
