@@ -39,9 +39,9 @@ function HomePage() {
                     <li>
                         <Link to='mis-peticiones'><Icon2 /> Mis Solicitudes</Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link to='Ruralidad'><Icon3 /> Ruralidad </Link>
-                    </li> */}
+                    </li>
                     <li>
                         <Link to='Solicitudes'><Icon3 /> Solicitudes </Link>
                     </li>
