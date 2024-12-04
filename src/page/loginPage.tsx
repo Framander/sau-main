@@ -46,7 +46,6 @@ function LoginPage() {
                 
             </section>
 
-
             <section className="fron-login">
 
                 <div className="content-form">
