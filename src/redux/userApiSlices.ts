@@ -45,6 +45,13 @@ export const userApiSlice = apiSlice.injectEndpoints({
                 body: data,
             }),
         }), 
+        ruralidad: builder.mutation({
+            query: (data) => ({
+                url: `${USERS_URL}/consults`,
+                method: 'POST',
+                body: data,
+            }),
+        }),
         solicitud_general: builder.mutation({
             query: (data) => ({
                 url: `${USERS_URL}/peticion/Solicitud-General`,
@@ -69,6 +76,7 @@ export const {
     useUpdateUserMutation, 
     useVerifyCodeMutation,
     useVerifyOTPMutation,
+    useRuralidadMutation,
     useSolicitud_generalMutation,
     useMy_solicitudMutation
 } = userApiSlice;
