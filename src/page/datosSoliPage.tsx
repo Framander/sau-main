@@ -37,7 +37,7 @@ function DataUser() {
 }
 
 function DatosSolicitudPage() {
-    const { id } = useParams()
+    const { id } = useParams() 
 
     function Tr() {
         return (
@@ -114,12 +114,6 @@ function DatosSolicitudPage() {
 
                     </table>
                 </section>
-
-                <ul>
-                    <li>Nro. de Factura: 00</li>
-                    <li>Nro. de Referencia Bancaria: 00</li>
-                    <li>Observación Administrativa</li>
-                </ul>
 
             </section>
 
