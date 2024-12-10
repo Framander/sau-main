@@ -64,7 +64,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
                 url: `${USERS_URL}/peticion/Solicitud-General`,
                 method: 'GET',
                 // body: data,
-            }),
+            }), 
         })
     }),
 });
