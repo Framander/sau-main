@@ -10,6 +10,7 @@ import Petition from "../page/petitionPage";
 import SolicitudPage from "../page/solicitudPage";
 import DatosSolicitudPage from "../page/datosSoliPage";
 import Ruralidad from "../page/ruralidad";
+import PDF  from "../PDF/pdf";
 
 const router = createBrowserRouter([
     {
@@ -54,9 +55,14 @@ const router = createBrowserRouter([
                     {
                         path: 'Solicitud/:id',
                         element: <DatosSolicitudPage />
-                    }
-                ]
+                    },
+                    
+                ],
             },
+                    // {
+                    //     path: 'PDF',
+                    //     element: <PDF/>
+                    // }
         ]
     },
 
